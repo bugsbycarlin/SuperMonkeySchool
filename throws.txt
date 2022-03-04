@@ -1,0 +1,7 @@
+block->brick
+pillar->column
+run->runner
+running->runner
+forest->tree_N
+building->cafe
+store->shop

@@ -1,0 +1,9 @@
+Release/
+Reference/
+References/
+Video/
+Store/Trailers
+Screenshots/
+Game/node_modules/
+node_modules/
+.DS_Store
