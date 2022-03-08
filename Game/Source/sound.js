@@ -4,12 +4,13 @@ let sound_volume = 0.4;
 let current_music = null;
 
 let sound_files = [
-  ["stage_1", "1_-_Juhani_Junkala_-_Stage_1.mp3"],
-  ["stage_2", "2_-_Disyman_-_Robot_Loop.mp3"],
-  ["stage_3", "3_-_Juhani_Junkala_-_Boss_Fight.mp3"],
+  ["title_music", "Steve_Oxen_Rio_After_Dark.mp3"],
+  // ["stage_1", "1_-_Juhani_Junkala_-_Stage_1.mp3"],
+  // ["stage_2", "2_-_Disyman_-_Robot_Loop.mp3"],
+  // ["stage_3", "3_-_Juhani_Junkala_-_Boss_Fight.mp3"],
   ["positive", "positive.wav"],
-  ["victory", "victory.mp3"],
-  ["shock", "shock.wav"],
+  // ["victory", "victory.mp3"],
+  // ["shock", "shock.wav"],
   // ["place", "place.wav"],
   // ["rotate", "rotate.wav"],
   // ["clear", "clear.wav"],

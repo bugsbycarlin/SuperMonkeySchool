@@ -27,8 +27,8 @@ function createWindow () {
     if (value != null) fullscreen = value;
 
     const mainWindow = new BrowserWindow({
-      width: 1024,
-      height: 576,
+      width: 1440,
+      height: 900,
       fullscreen: fullscreen,
       useContentSize: true,
       backgroundColor: '#000000',

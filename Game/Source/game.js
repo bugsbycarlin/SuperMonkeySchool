@@ -20,24 +20,6 @@ var default_font = "Bebas Neue";
 
 var first_screen = "title";
 
-let structure = {
-  1: {
-    delay: 0.42857 * 1000,
-    beats: 96,
-    offset: 0,
-  },
-  2: {
-    delay: 0.444444 * 1000,
-    beats: 128,
-    offset: 0.456 * 1000,
-  },
-  3: {
-    delay: 0.342857 * 1000,
-    beats: 209,
-    offset: 0,
-  }
-};
-
 
 function initialize() {
   game = new Game();
@@ -88,46 +70,15 @@ class Game {
     };
 
     PIXI.Loader.shared
-    .add("Art/jump.json")
-    .add("Art/hurt.json")
-    .add("Art/death.json")
-    .add("Art/idle.json")
-    .add("Art/roll.json")
-    .add("Art/skeleton.json")
-    .add("Art/dust.json")
-
-    .add("Art/smoke.json")
-    .add("Art/electric.json")
+    .add("Art/Effects/smoke.json")
+    .add("Art/Effects/electric.json")
     .add("Art/title.png")
-    .add("Art/bgcolor.png")
-    .add("Art/board.png")
-    .add("Art/greens.png")
+
+    .add("Art/background.png")
+    
+    .add("Art/monkey_1.png")
+    .add("Art/monkey_2.png")
     .add("Art/heart.png")
-    .add("Art/message.png")
-    .add("Art/press_1.png")
-    .add("Art/press_2.png")
-    .add("Art/press_3.png")
-    .add("Art/selector.png")
-
-
-
-    .add("Art/letter_a.png")
-    .add("Art/letter_s.png")
-    .add("Art/letter_d.png")
-    .add("Art/letter_f.png")
-    .add("Art/letter_g.png")
-    .add("Art/letter_h.png")
-
-    .add("Art/1_a.png")
-    .add("Art/1_b.png")
-    .add("Art/2_a.png")
-    .add("Art/2_b.png")
-    .add("Art/3_a.png")
-    .add("Art/3_b.png")
-    .add("Art/4_a.png")
-    .add("Art/4_b.png")
-    .add("Art/5_a.png")
-    .add("Art/5_b.png")
 
       // .add("Art/blast_energy.json")
       // .add("Art/smoke.json")
@@ -188,8 +139,8 @@ class Game {
   basicInit() {
     var self = this;
 
-    this.width = 1024;
-    this.height = 576;
+    this.width = 1440;
+    this.height = 900;
 
     // Create the pixi application
     pixi = new PIXI.Application(this.width, this.height, {antialias: true, backgroundColor: 0x282728});
