@@ -16,7 +16,13 @@ class GameScreen extends PIXI.Container {
 
 
   initializeScreen() {
-    this.background = makeSprite("Art/background.png");
+    // this.background = makeSprite("Art/background.png");
+
+    this.background = makeSprite("Art/placeholder_background.jpg");
+    this.background.anchor.set(0.5,0);
+    this.background.position.set(game.width/2,170);
+    // this.background.scale.set(0.9, 0.9);
+
     this.addChild(this.background);
 
     this.play_mat = makeContainer(this);
@@ -33,23 +39,23 @@ class GameScreen extends PIXI.Container {
 
     this.left_monkey = makeSprite("Art/monkey_1.png");
     this.left_monkey.anchor.set(0.5, 0.5);
-    this.left_monkey.position.set(game.width / 4, game.height - 150);
+    this.left_monkey.position.set(game.width / 4 - 50, game.height - 150);
     this.play_mat.addChild(this.left_monkey);
 
     this.right_monkey = makeSprite("Art/monkey_2.png");
     this.right_monkey.anchor.set(0.5, 0.5);
-    this.right_monkey.position.set(3 * game.width / 4, game.height - 150);
+    this.right_monkey.position.set(3 * game.width / 4 + 50, game.height - 150);
     this.right_monkey.scale.set(-1,1);
     this.play_mat.addChild(this.right_monkey);
 
     this.left_cloud = makeSprite("Art/cloud.png");
     this.left_cloud.anchor.set(0.5, 0);
-    this.left_cloud.position.set(game.width / 4, 30);
+    this.left_cloud.position.set(game.width / 4 - 50, 30);
     this.play_mat.addChild(this.left_cloud);
 
     this.right_cloud = makeSprite("Art/cloud.png");
     this.right_cloud.anchor.set(0.5, 0);
-    this.right_cloud.position.set(3 * game.width / 4, 30);
+    this.right_cloud.position.set(3 * game.width / 4 + 50, 30);
     this.play_mat.addChild(this.right_cloud);
 
     this.mode = "active";
