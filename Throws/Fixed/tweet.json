@@ -1,0 +1,31 @@
+{"frames": {
+
+"tweet_1.png":
+{
+	"frame": {"x":0,"y":0,"w":144,"h":279},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":279},
+	"sourceSize": {"w":144,"h":279}
+},
+"tweet_2.png":
+{
+	"frame": {"x":144,"y":0,"w":144,"h":279},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":279},
+	"sourceSize": {"w":144,"h":279}
+}},
+"animations": {
+	"tweet": ["tweet_1.png","tweet_2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tweet.png",
+	"format": "RGBA8888",
+	"size": {"w":288,"h":279},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:58d45be9e43534175648409220a5369e:7be3f86a1733e649166f0a770a21f1a5:0edc5220e0b3f48bcbb7d64801a7ea17$"
+}
+}
